@@ -127,11 +127,3 @@ Top Expense Category : Housing/Rent
 * Email notifications for budget alerts
 
 ---
-
-## 👨‍💻 Author
-
-**Jefrin Raj**
-
- Computer Science and Engineering (CSE)
-
-Python | Data Analytics | Streamlit | JSON | GitHub
