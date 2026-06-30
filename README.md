@@ -130,8 +130,8 @@ Top Expense Category : Housing/Rent
 
 ## 👨‍💻 Author
 
-**Jefrin Jefrin**
+**Jefrin Raj**
 
-Final Year – Computer Science and Engineering (CSE)
+ Computer Science and Engineering (CSE)
 
 Python | Data Analytics | Streamlit | JSON | GitHub
