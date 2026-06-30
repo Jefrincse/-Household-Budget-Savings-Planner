@@ -1,38 +1,51 @@
 # 🏡 Household Budget & Savings Planner
-A lightweight, modern Python web application built using **Streamlit** that helps households track income, expenses, and savings while providing detailed spending breakdowns.
-## 🚀 Quick Start
-### 1. Install Dependencies
-Make sure you have Python installed, then install the required libraries:
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Streamlit App](https://img.shields.io/badge/framework-Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![JSON DB](https://img.shields.io/badge/database-JSON%20File-green.svg)](https://www.json.org/)
+A robust, lightweight personal finance dashboard designed to track income, categorize expenses, monitor budget category thresholds, and analyze monthly net savings. The project illustrates core Python programming principles combined with modern web application dashboards.
+---
+## 🗺️ Project Scope & Features
+### 🔹 Basic (Core Functionality)
+* **Income Log**: Add monthly income sources with custom titles and dates.
+* **Savings Calculation**: Real-time evaluation of total savings and progress percentage.
+### 🔸 Intermediate (Categorization & Logic)
+* **Categorized Expense Logging**: Organizes spending into standard categories like `Food`, `Housing/Rent`, `Utilities`, `Transportation/Travel`, `Entertainment`, etc.
+* **Strict Validation Rules**: Employs robust `try/except` statements validating dates, non-negative amounts, and required descriptors.
+### 🚀 Extended (Dashboard & Analytics)
+* **Visual Breakdown**: Interactive chart summaries dynamically displaying spending ratios.
+* **Savings Goal Target**: Live indicator detailing current progress toward a set financial goal.
+* **Threshold Alerts**: Warning alerts notifying the user when category budget limits are breached.
+* **Backup & Restore**: Download full database state as a JSON file, or restore from a backup.
+---
+## 🛠️ Technology Stack
+* **Language**: Python 3.8+
+* **UI Framework**: Streamlit
+* **Data Processing**: Pandas
+* **Charts/Visualizations**: Plotly / Native Streamlit Charts
+* **Database**: JSON file persistence
+---
+## 🚀 Getting Started
+### 1. Installation
+Clone the repository and install the dependencies:
 ```bash
 pip install streamlit pandas plotly
-```
-### 2. Run the Web Dashboard
-Start the Streamlit server from the project directory:
-```bash
+### 2. Running the Application
+Launch the interactive web dashboard:
+
+bash
 streamlit run app.py
-```
-### 3. Run Automated Verification Tests
-You can run the built-in testing suite to verify budget and data handling functions:
-```bash
+
+3. Running Automated Tests
+Validate database operations, calculation logic, and validation rules using:
+
+bash
 python test_budget.py
-```
----
-## 🛠️ Features
-- **Income Tracking**: Add monthly income sources.
-- **Categorized Expenses**: Log expenses with description and category (e.g., Food, Travel, Utilities, Other).
-- **Savings Analysis**: Instantly calculates total expenses, net savings, and savings rate.
-- **Visual Analytics**: Interactive Streamlit charts showcasing a category breakdown of expenditures.
-- **Data Persistence**: Automatically stores and reads budget data to/from a local `budget.json` database.
----
-## 📚 Concepts Covered
-- **Functions**: Encapsulated read/write procedures (`load_data`, `save_data`) and modular computation logic.
-- **Lists & Dictionaries**: Structured nested storage representing transactions, categories, and dataset schemas.
-- **try/except**: Resilient error handling safeguarding file loading issues and corrupt structures.
-- **File Handling (JSON)**: State serialization across user sessions.
-- **Streamlit (Extended)**: Custom metrics dashboard, interactive bar graphs, tables, and reactive user forms.
----
-## 📁 File Structure
-- [app.py](file:///c:/Users/Jefrin%20Raj/OneDrive/Desktop/Anti_Gravity/app.py): The main 55-line Streamlit dashboard application.
-- [budget_manager.py](file:///c:/Users/Jefrin%20Raj/OneDrive/Desktop/Anti_Gravity/budget_manager.py): Core library containing back-end processing logic.
-- [test_budget.py](file:///c:/Users/Jefrin%20Raj/OneDrive/Desktop/Anti_Gravity/test_budget.py): Testing script validating data persistence, limits, and math logic.
-- `budget.json` / `data/`: Local storage containing database backups.
+
+📂 File Architecture
+app.py
+: Main frontend file. Features a user-friendly sidebar for logs and main dashboard components.
+budget_manager.py
+: The underlying processing library implementing file I/O operations, validations, additions, and deletions.
+test_budget.py
+: Comprehensive test suite validating financial calculations, serialization, deletion, and validation logic.
+budget.json / data/: JSON database instances storing serialized state.
