@@ -1,129 +1,38 @@
-# 💰 Household Budget & Savings Planner
-
-## 📌 Project Overview
-
-The **Household Budget & Savings Planner** is a Python-based application designed to help individuals and families manage their monthly finances efficiently. It allows users to record income and expenses, categorize spending, calculate savings, and generate financial reports. The project promotes better financial planning by providing insights into spending habits and savings.
-
----
-
-## 🎯 Problem Statement
-
-Many families struggle to understand their monthly spending patterns, making it difficult to manage expenses and achieve savings goals. This application helps users track income and expenses, categorize spending, and analyze their financial health through reports and visualizations.
-
----
-
-## ✨ Features
-
-* Add and manage income records
-* Add and manage expense records
-* Categorize expenses (Food, Housing/Rent, Utilities, Transportation, Entertainment, Healthcare, Education, Shopping, Miscellaneous)
-* Calculate total income
-* Calculate total expenses
-* Calculate total savings
-* Set savings goals
-* Set category-wise budget limits
-* Generate financial summary reports
-* Store data using JSON for persistent storage
-* User-friendly Streamlit dashboard (Extended Version)
-* Visual charts for spending analysis (Extended Version)
-
----
-
-## 🛠️ Technologies Used
-
-* Python
-* Streamlit
-* JSON Module
-* File Handling
-* UUID
-* Datetime
-
----
-
-## 📚 Python Concepts Covered
-
-* Functions
-* Lists
-* Dictionaries
-* Exception Handling (`try/except`)
-* File Handling (JSON)
-* Data Validation
-* Modular Programming
-
----
-
-## 📂 Project Structure
-
-```text
-Household-Budget-Savings-Planner/
-│── app.py                 # Streamlit application
-│── budget.py              # Budget management functions
-│── budget_data.json       # Stores income and expense records
-│── requirements.txt
-│── README.md
+# 🏡 Household Budget & Savings Planner
+A lightweight, modern Python web application built using **Streamlit** that helps households track income, expenses, and savings while providing detailed spending breakdowns.
+## 🚀 Quick Start
+### 1. Install Dependencies
+Make sure you have Python installed, then install the required libraries:
+```bash
+pip install streamlit pandas plotly
 ```
-
----
-
-## 🚀 Project Deliverables
-
-* Accept income and expense details
-* Store financial data in JSON format
-* Calculate total income
-* Calculate total expenses
-* Calculate total savings
-* Generate spending reports
-* Display financial summary
-* Visualize spending trends using charts
-
----
-
-## 📈 Project Levels
-
-### ✅ Basic
-
-* Input income
-* Input expenses
-* Display total savings
-
-### ✅ Intermediate
-
-* Categorize expenses
-* Generate category-wise spending report
-* Calculate savings rate
-
-### ✅ Extended
-
-* Interactive Streamlit dashboard
-* Financial charts and visualizations
-* Savings goal tracking
-* Category budget management
-
----
-
-## 📊 Sample Financial Summary
-
-```text
-Total Income      : ₹50,000
-
-Total Expenses    : ₹32,000
-
-Total Savings     : ₹18,000
-
-Savings Rate      : 36%
-
-Top Expense Category : Housing/Rent
+### 2. Run the Web Dashboard
+Start the Streamlit server from the project directory:
+```bash
+streamlit run app.py
 ```
-
+### 3. Run Automated Verification Tests
+You can run the built-in testing suite to verify budget and data handling functions:
+```bash
+python test_budget.py
+```
 ---
-
-## 🎯 Future Enhancements
-
-* Monthly and yearly financial reports
-* Export reports as PDF or Excel
-* User authentication and login
-* Database integration (MySQL/MongoDB)
-* AI-based expense prediction
-* Email notifications for budget alerts
-
+## 🛠️ Features
+- **Income Tracking**: Add monthly income sources.
+- **Categorized Expenses**: Log expenses with description and category (e.g., Food, Travel, Utilities, Other).
+- **Savings Analysis**: Instantly calculates total expenses, net savings, and savings rate.
+- **Visual Analytics**: Interactive Streamlit charts showcasing a category breakdown of expenditures.
+- **Data Persistence**: Automatically stores and reads budget data to/from a local `budget.json` database.
 ---
+## 📚 Concepts Covered
+- **Functions**: Encapsulated read/write procedures (`load_data`, `save_data`) and modular computation logic.
+- **Lists & Dictionaries**: Structured nested storage representing transactions, categories, and dataset schemas.
+- **try/except**: Resilient error handling safeguarding file loading issues and corrupt structures.
+- **File Handling (JSON)**: State serialization across user sessions.
+- **Streamlit (Extended)**: Custom metrics dashboard, interactive bar graphs, tables, and reactive user forms.
+---
+## 📁 File Structure
+- [app.py](file:///c:/Users/Jefrin%20Raj/OneDrive/Desktop/Anti_Gravity/app.py): The main 55-line Streamlit dashboard application.
+- [budget_manager.py](file:///c:/Users/Jefrin%20Raj/OneDrive/Desktop/Anti_Gravity/budget_manager.py): Core library containing back-end processing logic.
+- [test_budget.py](file:///c:/Users/Jefrin%20Raj/OneDrive/Desktop/Anti_Gravity/test_budget.py): Testing script validating data persistence, limits, and math logic.
+- `budget.json` / `data/`: Local storage containing database backups.
