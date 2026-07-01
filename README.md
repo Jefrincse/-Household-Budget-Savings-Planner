@@ -1,50 +1,253 @@
-🏡 Household Budget & Savings Planner
-Python VersionStreamlit AppJSON DB
+# 🏡 Household Budget & Savings Planner
 
-A robust, lightweight personal finance dashboard designed to track income, categorize expenses, monitor budget category thresholds, and analyze monthly net savings. The project illustrates core Python programming principles combined with modern web application dashboards.
+A modern and interactive **Household Budget & Savings Planner** built using **Python**, **Streamlit**, **Pandas**, **Plotly**, and **JSON**. This application helps users manage their income and expenses, monitor savings, set financial goals, and visualize spending patterns through an intuitive dashboard.
 
-🗺️ Project Scope & Features
-🔹 Basic (Core Functionality)
-Income Log: Add monthly income sources with custom titles and dates.
-Savings Calculation: Real-time evaluation of total savings and progress percentage.
-🔸 Intermediate (Categorization & Logic)
-Categorized Expense Logging: Organizes spending into standard categories like Food, Housing/Rent, Utilities, Transportation/Travel, Entertainment, etc.
-Strict Validation Rules: Employs robust try/except statements validating dates, non-negative amounts, and required descriptors.
-🚀 Extended (Dashboard & Analytics)
-Visual Breakdown: Interactive chart summaries dynamically displaying spending ratios.
-Savings Goal Target: Live indicator detailing current progress toward a set financial goal.
-Threshold Alerts: Warning alerts notifying the user when category budget limits are breached.
-Backup & Restore: Download full database state as a JSON file, or restore from a backup.
-🛠️ Technology Stack
-Language: Python 3.8+
-UI Framework: Streamlit
-Data Processing: Pandas
-Charts/Visualizations: Plotly / Native Streamlit Charts
-Database: JSON file persistence
-🚀 Getting Started
-1. Installation
-Clone the repository and install the dependencies:
+---
 
-bash
+## 📌 Project Overview
 
-pip install streamlit pandas plotly
-2. Running the Application
-Launch the interactive web dashboard:
+Managing personal finances manually can be difficult and time-consuming. This project provides an easy-to-use web application that allows users to:
 
-bash
+- Track income and expenses
+- Calculate total savings automatically
+- Set monthly savings goals
+- Monitor category-wise budgets
+- View interactive charts and reports
+- Backup and restore financial data
 
+The application is designed with a user-friendly interface to simplify household financial management.
+
+---
+
+## 🎯 Objectives
+
+- Record income and expenses
+- Calculate net savings
+- Set and monitor savings goals
+- Manage category-wise budgets
+- Visualize financial data using charts
+- Provide budget alerts
+- Allow data backup and restore
+
+---
+
+## 🚀 Features
+
+### 💰 Income Management
+- Add multiple income sources
+- Record amount and date
+- View income history
+- Delete income records
+
+### 💸 Expense Management
+- Add daily expenses
+- Categorize expenses
+- Record amount and payment date
+- Delete expense records
+
+### 🎯 Savings Goal
+- Set monthly savings targets
+- Monitor savings progress
+- View savings percentage
+
+### 🛡️ Budget Management
+- Set spending limits for each category
+- Track category-wise expenses
+- Receive alerts when limits are exceeded
+
+### 📊 Dashboard
+- Total Income
+- Total Expenses
+- Net Savings
+- Savings Rate
+- Expense Pie Chart
+- Savings Progress Gauge
+- Category Budget Table
+- Income & Expense Logs
+
+### 📂 Backup & Restore
+- Export financial data as JSON
+- Import JSON backup
+- Restore previous records
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming Language |
+| Streamlit | Web Application Framework |
+| Pandas | Data Processing |
+| Plotly | Interactive Charts |
+| JSON | Data Storage |
+
+---
+
+## 📁 Project Structure
+
+```
+Household_Budget_Savings_Planner/
+│
+├── app.py
+├── budget_manager.py
+├── requirements.txt
+├── README.md
+├── data/
+│   └── budget_data.json
+└── assets/
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/Household-Budget-Savings-Planner.git
+```
+
+### Navigate to the Project
+
+```bash
+cd Household-Budget-Savings-Planner
+```
+
+### Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Application
+
+```bash
 streamlit run app.py
-3. Running Automated Tests
-Validate database operations, calculation logic, and validation rules using:
+```
 
-bash
+The application will open automatically in your browser.
 
-python test_budget.py
-📂 File Architecture
-app.py
-: Main frontend file. Features a user-friendly sidebar for logs and main dashboard components.
+---
+
+## 📷 Dashboard Includes
+
+- Financial Summary Cards
+- Income Tracking
+- Expense Tracking
+- Savings Progress
+- Expense Distribution Chart
+- Budget Alerts
+- Transaction Logs
+- Category Budget Tracker
+
+---
+
+## 🔄 Application Workflow
+
+```
+User
+   │
+   ▼
+Streamlit Interface
+   │
+   ▼
 budget_manager.py
-: The underlying processing library implementing file I/O operations, validations, additions, and deletions.
-test_budget.py
-: Comprehensive test suite validating financial calculations, serialization, deletion, and validation logic.
-budget.json / data/: JSON database instances storing serialized state.
+   │
+   ▼
+JSON Database
+   │
+   ▼
+Dashboard & Reports
+```
+
+---
+
+## 📊 Expense Categories
+
+- Food
+- Housing / Rent
+- Utilities
+- Transportation
+- Entertainment
+- Healthcare
+- Education
+- Shopping
+- Miscellaneous
+
+---
+
+## 🔮 Future Enhancements
+
+- User Authentication
+- Cloud Database Integration
+- AI-Based Spending Prediction
+- Mobile Application
+- Excel Export
+- PDF Report Generation
+- Email Notifications
+- Monthly Financial Reports
+
+---
+
+## 💡 Advantages
+
+- Easy to use
+- Interactive dashboard
+- Real-time financial summary
+- Automatic savings calculation
+- Budget monitoring
+- Secure data backup
+- Lightweight application
+
+---
+
+## 🎓 Learning Outcomes
+
+This project demonstrates concepts such as:
+
+- Python Programming
+- Streamlit Development
+- Pandas Data Analysis
+- Plotly Visualization
+- JSON File Handling
+- Exception Handling
+- Functions
+- Lists & Dictionaries
+- File Handling
+- Data Validation
+
+---
+
+## 📌 Requirements
+
+- Python 3.9+
+- Streamlit
+- Pandas
+- Plotly
+
+Install dependencies:
+
+```bash
+pip install streamlit pandas plotly
+```
+
+---
+
+## 👨‍💻 Developed By
+
+**Jefrin Raj**
+
+Final Year – Computer Science and Engineering
+
+---
+
+## 📜 License
+
+This project is developed for educational purposes and can be freely modified and used for learning.
+
+---
+
+# ⭐ If you like this project, don't forget to Star the repository!
