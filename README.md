@@ -240,7 +240,9 @@ pip install streamlit pandas plotly
 
 **Jefrin Raj**
 
-Final Year – Computer Science and Engineering
+**MOhammad Arshath**
+
+**Sujan**
 
 ---
 
